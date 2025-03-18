@@ -101,7 +101,6 @@ th {
   background-color: #fff;
   color: #29313A;
   font-weight: 500;
-  /* font-family: "Roboto", sans-serif;  */
 }
 
 tr:hover {
@@ -152,10 +151,6 @@ td {
   padding: 1rem;
 }
 
-/* .tbl-data{
-  border-collapse: separate;
-
-} */
 .tbl-data td {
   background-color: #fff;
 }
@@ -171,7 +166,6 @@ td {
 .tbl-data tr:not(:last-child) {
   border-bottom: 0.5px solid #ddd !important;
 }
-
 
 .tbl-data tr:last-child td:first-child {
   border-bottom-left-radius: 1rem;

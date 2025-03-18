@@ -20,9 +20,9 @@ const LandingPage = () => {
                     />
                     <select className="filter" onChange={(e) => setFilter(e.target.value)} value={filter}
                         style={{
-                            backgroundColor: filter ? "#EBF5FF" : "#E1E4E9", // Same color for all selected values
-                            color: filter ? "#084782" : "#29313A",// Change text color if a value is selected
-                            border: filter ? "1px solid #084782" : "",  // Change border color if a value is selected
+                            backgroundColor: filter ? "#EBF5FF" : "#E1E4E9", 
+                            color: filter ? "#084782" : "#29313A",
+                            border: filter ? "1px solid #084782" : "", 
                         }}>
                         <option value="">All Types</option>
                         <option value="Album">Album</option>
