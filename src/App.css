@@ -1,5 +1,5 @@
 .container {
-  max-width: 1200px;
+  max-width: 1400px;
   margin: 0 auto;
   padding: 20px;
   text-align: center;
@@ -8,39 +8,42 @@
 .title {
   font-size: 2rem;
   margin-bottom: 20px;
+  color: #29313A;
 }
-.album-cont{
+
+.album-cont {
   background-color: #fff;
   border-radius: 0.5rem;
   padding: 1rem;
+  border: 1px solid #E6ECF0;
 }
 
 .search-container {
   display: flex;
   gap: 1rem;
   margin-bottom: 2rem;
-
 }
 
 .search {
   width: 250px;
-  padding: 10px 40px 10px 10px; 
-  border: 1px solid #ccc;
+  padding: 10px 40px 10px 10px;
   border-radius: 5px;
-  background: url("./assets/search.png") no-repeat right 10px center; 
+  background: url("./assets/search.png") no-repeat right 10px center;
   background-size: 20px;
   outline: none;
 }
 
-.view-cont{
+.view-cont {
   display: flex;
   align-items: center;
 }
-.view-cont a{
+
+.view-cont a {
   text-decoration: none;
   color: rgb(25, 25, 156);
 }
-.view-img{
+
+.view-img {
   width: 20px;
   height: auto;
   padding: 0.5rem;
@@ -48,25 +51,24 @@
 
 .filter {
   padding: 10px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
+  border-radius: 10px;
+  background-color: #E1E4E9;
 }
 
-.view-head{
+.view-head {
   background-color: #fff;
   line-height: 40px;
   padding: 1.5rem;
 }
 
-.view-head h1{
+.view-head h1 {
   margin: 0;
 }
-
 
 .table-container {
   width: 90%;
   margin: 20px auto;
-  font-family: Arial, sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 th {
@@ -86,17 +88,20 @@ table {
 
 td {
   font-weight: 400;
-  color: #333;
+  color: #29313A;
 }
 
-th, td {
+th,
+td {
   padding: 12px;
   border-bottom: 1px solid #ddd;
 }
 
 th {
-  background-color: #f4f4f4;
+  background-color: #fff;
+  color: #29313A;
   font-weight: 500;
+  /* font-family: "Roboto", sans-serif;  */
 }
 
 tr:hover {
@@ -105,12 +110,12 @@ tr:hover {
 
 .collection-name {
   font-weight: 400;
-  color: #333;
+  color: #29313A;
 }
 
 .artist-name {
   font-size: 14px;
-  color: #b8b9bb;
+  color: #677A90;
 }
 
 .error {
@@ -118,41 +123,48 @@ tr:hover {
   text-align: center;
 }
 
-.tbl-head{
+.tbl-head {
   background-color: #fff;
   border-radius: 1rem;
   margin-bottom: 1rem;
 }
-.tbl-head th,td{
+
+.tbl-head th,
+td {
   border-bottom: none !important;
   padding: 0.5rem;
 
 }
-.tbl-head table{
+
+.tbl-head table {
   border-collapse: separate;
-} 
-.tbl-head th:first-child{
+}
+
+.tbl-head th:first-child {
   border-top-left-radius: 1rem;
-} 
-.tbl-head th:last-child{
+}
+
+.tbl-head th:last-child {
   border-top-right-radius: 1rem;
 }
-.tbl-cont{
+
+.tbl-cont {
   padding: 1rem;
 }
+
 /* .tbl-data{
   border-collapse: separate;
 
 } */
-.tbl-data td{
+.tbl-data td {
   background-color: #fff;
 }
 
-.tbl-data th:first-child{
+.tbl-data th:first-child {
   border-top-left-radius: 1rem;
 }
 
-.tbl-data th:last-child{
+.tbl-data th:last-child {
   border-top-right-radius: 1rem;
 }
 

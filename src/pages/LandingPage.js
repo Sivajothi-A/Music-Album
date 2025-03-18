@@ -5,7 +5,6 @@ import { AlbumContext } from "../AlbumData/AlbumContext";
 const LandingPage = () => {
     const { isloading, error, filteredAlbums, setFilter, setSearch, filter, search, formatDuration, formatDate, formatSize } = useContext(AlbumContext);
 
-
     return (
         <div className="container">
             <h1 className="title">Overview</h1>
@@ -19,7 +18,12 @@ const LandingPage = () => {
                         value={search}
                         onChange={(e) => setSearch(e.target.value)}
                     />
-                    <select className="filter" onChange={(e) => setFilter(e.target.value)} value={filter}>
+                    <select className="filter" onChange={(e) => setFilter(e.target.value)} value={filter}
+                        style={{
+                            backgroundColor: filter ? "#EBF5FF" : "#E1E4E9", // Same color for all selected values
+                            color: filter ? "#084782" : "#29313A",// Change text color if a value is selected
+                            border: filter ? "1px solid #084782" : "",  // Change border color if a value is selected
+                        }}>
                         <option value="">All Types</option>
                         <option value="Album">Album</option>
                         <option value="EP">EP</option>
@@ -58,7 +62,7 @@ const LandingPage = () => {
                                     <td>
                                         <div className="view-cont">
                                             <img src={viewicon} className="view-img"></img>
-                                            <Link to={`/collectionDetails/${album.id}`}>view more</Link>
+                                            <Link to={`/collectionDetails/${album.id}`}>View Details</Link>
                                         </div>
                                     </td>
                                 </tr>
